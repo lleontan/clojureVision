@@ -1,0 +1,101 @@
+img {
+  border-color: black;
+  border-style: dashed;
+}
+
+#results, #currentImgDiv {
+  overflow: auto;
+}
+
+#currentImgDiv {
+  position: relative;
+  flex-basis: 70%;
+  height: 40%;
+  width: 90%;
+  align-self: center;
+  flex-direction: row;
+}
+
+polygon {
+  stroke-width: 1;
+  fill: none;
+  opacity: 0.55;
+  stroke: black;
+}
+
+img, #boundingBoxes {
+  border-width: 1px;
+  max-width: 95%;
+  max-height: 95%;
+}
+
+#boundingBoxes, img {
+  position: absolute;
+}
+
+.hidden {
+  visibility: hidden;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+header {
+  align-items: center;
+}
+
+header, #inputsDiv, main, #inputsDiv>div, #currentImgDiv {
+  display: flex;
+}
+
+main {
+  flex-direction: row;
+}
+
+header, #inputsDiv, #fileInputDiv {
+  flex-direction: column;
+}
+
+#inputsDiv {
+  justify-content: space-around;
+  height: 470px;
+}
+
+main {
+  align-items: flex-start;
+}
+
+img, #boundingBoxes, main>div, input, button, #visionOptions {
+  margin: 1.5%;
+}
+
+#visionOptions {
+  flex-basis: 30%;
+}
+
+#picUpload {
+  margin-right: 2px;
+}
+
+#inputsDiv, #results {
+  border-width: 2px;
+  border-color: black;
+  border-style: solid;
+}
+
+#fileInputDiv {
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+#inputsDiv>div, #fileInputDiv {
+  flex-direction: row;
+}
+
+#results {
+  margin-left: 1%;
+  flex-basis: 40%;
+  height: 500px;
+  padding: 3px;
+}
